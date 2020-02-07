@@ -24,7 +24,7 @@
           </a>
           <ul class="navbar-nav mx-auto">
             <li class="nav-item">
-              <a class="nav-link"><h3 class="mb-0">SUPPLIERS</h3></a>
+              <a class="nav-link py-1"><img src="assets/images/logo.png" height="50px"></a>
             </li>
           </ul>
           <a class="navbar-brand text-info mr-0" href="index.html">
@@ -35,17 +35,17 @@
 
       <main>
         <div class="container-fluid pt-5 mt-5 main_div">
-          <div class="row justify-content-center">
-            <form action="" method="POST" style="width: 100%;">
-              <div class="col-12 col-md-6">
+          <form action="" method="POST" style="width: 100%;">
+            <div class="row justify-content-center">
+              <div class="col-md-6">
                 <table class="table table-borderless mb-0">
                   <tr>
-                    <td class="py-1 px-1" width="30%"><b>PO #</b></td>
-                    <td class="py-1 px-0">:</td>
+                    <td class="py-1 px-1" width="25%"><b>PO #</b></td>
+                    <td class="py-1 px-0" width="1%">:</td>
                     <td class="py-1 px-1">45000789</td>
                   </tr>
                   <tr>
-                    <td class="py-1 px-1"><b>PO Desc</b></td>
+                    <td class="py-1 px-1"><b>PO Description</b></td>
                     <td class="py-1 px-0">:</td>
                     <td class="py-1 px-1">Supply Medical....</td>
                   </tr>
@@ -56,7 +56,25 @@
                   </tr>
                 </table>
               </div>
-              <div class="col-0 col-md-6"></div>
+              <div class="col-md-6">
+                <table class="table table-borderless mb-0">
+                  <tr>
+                    <td class="py-1 px-1" width="20%"><b>Date</b></td>
+                    <td class="py-1 px-0" width="1%">:</td>
+                    <td class="py-1 px-1"><input type="date" name="date" required></td>
+                  </tr>
+                  <tr>
+                    <td class="py-1 px-1"><b>Time</b></td>
+                    <td class="py-1 px-0">:</td>
+                    <td class="py-1 px-1"><input type="time" name="time" required></td>
+                  </tr>
+                  <tr>
+                    <td class="py-1 px-1"><b>Ship To</b></td>
+                    <td class="py-1 px-0">:</td>
+                    <td class="py-1 px-1"><input type="text" name="location" required></td>
+                  </tr>
+                </table>
+              </div>
 
 
               <div class="col-12 text-center">
@@ -64,13 +82,10 @@
                   <thead class="bg-info text-white">
                     <tr>
                       <th>PO Item #</th>
-                      <th>Item Desc</th>
+                      <th>Item Description</th>
                       <th>Qty</th>
                       <th>Ship To</th>
                       <th>Include in ASN?</th>
-                      <th>Date</th>
-                      <th>Time</th>
-                      <th>Ship To</th>
                     </tr>
                   </thead>
                   <tbody>
@@ -80,11 +95,10 @@
                       <td>30</td>
                       <td>MOH</td>
                       <td>
-                        <span><b>Yes</b></span>
+                       <label>
+                        <input type="checkbox" class="option-input checkbox" checked required />
+                       </label>
                       </td>
-                      <td><input type="date" name="date"></td>
-                      <td><input type="time" name="time"></td>
-                      <td><input type="text" name="location"></td>
                     </tr>
                     <tr>
                       <td>10</td>
@@ -92,11 +106,10 @@
                       <td>30</td>
                       <td>MOH</td>
                       <td>
-                        <span><b>Yes</b></span>
+                       <label>
+                        <input type="checkbox" class="option-input checkbox" checked required />
+                       </label>
                       </td>
-                      <td><input type="date" name="date"></td>
-                      <td><input type="time" name="time"></td>
-                      <td><input type="text" name="location"></td>
                     </tr>
                     <tr>
                       <td>10</td>
@@ -104,23 +117,50 @@
                       <td>30</td>
                       <td>MOH</td>
                       <td>
-                        <span><b>Yes</b></span>
+                       <label>
+                        <input type="checkbox" class="option-input checkbox" checked required />
+                       </label>
                       </td>
-                      <td><input type="date" name="date"></td>
-                      <td><input type="time" name="time"></td>
-                      <td><input type="text" name="location"></td>
                     </tr>
                   </tbody>
                 </table>
               </div>
               <div class="form-group text-center mt-5">
-                <a href="#" class="btn btn-info">Send Request</a>
+                <a href="#" class="btn btn-info" data-toggle="modal" data-target="#myModal">Send Request</a>
               </div>
-            </form>
-
-          </div>
+            </div>
+          </form>
         </div>
       </main>
+
+
+      <!-- The Modal -->
+      <div class="modal fade" id="myModal">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+          
+            <!-- Modal Header -->
+            <div class="modal-header py-0" style="border-bottom: none;">
+              <button type="button" class="close" data-dismiss="modal" style="outline: none;">&times;</button>
+            </div>
+            
+            <!-- Modal body -->
+            <div class="modal-body text-center">
+              <h5 class="mb-3">Your Requested ASN ID :</h5>
+              <span class="bg-dark text-white p-2">123456789</span>
+            </div>
+            
+            <!-- Modal footer -->
+            <div class="modal-footer py-2 mt-3 mb-3" style="border-top: none;">
+              <a href="po_list.html" class="btn btn-info px-5 mx-auto" >Close</a>
+            </div>
+            
+          </div>
+        </div>
+      </div>
+
+
+
 
   </body>
 </html>
