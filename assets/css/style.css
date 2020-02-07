@@ -8,7 +8,9 @@ a{
 nav{
 	border-bottom: 3px solid #17a2b8;
 }
-
+.table td, .table tr{
+  vertical-align: middle;
+}
 .main_div{
 	width: 75%;
 }
