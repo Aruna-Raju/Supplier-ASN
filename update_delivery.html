@@ -40,10 +40,10 @@
         <div class="container-fluid pt-5 mt-5 main_div">
           <div class="row justify-content-center">
             <h3 class="mb-4">
-              <b>List of all Open POs</b>
+              <b>List of Requested POs</b>
             </h3>
 
-            <div class="col-12 text-center">
+            <div class="col-12 table_height text-center">
               <table class="table table-bordered mx-auto">
                 <thead class="bg-info text-white">
                   <tr>
@@ -55,26 +55,26 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
+                  <tr onclick="window.location.href='pdt_details_delivery.html'">
                     <td>123456789</td>
                     <td>45000789</td>
                     <td>Supply Medical.....</td>
                     <td>112450 SAR</td>
-                    <td><a href="#" class="btn btn-info btn-sm" data-toggle="modal" data-target="#update_deliver">Delivered</a></td>
+                    <td><a href="#" class="btn btn-info btn-sm">Update Delivery</a></td>
                   </tr>
-                  <tr>
+                  <tr onclick="window.location.href='pdt_details_delivery.html'">
                     <td>123456790</td>
                     <td>45000789</td>
                     <td>Supply Medical.....</td>
                     <td>112450 SAR</td>
                     <td>Items Delivered</td>
                   </tr>
-                  <tr>
+                  <tr onclick="window.location.href='pdt_details_delivery.html'">
                     <td>123456791</td>
                     <td>45000789</td>
                     <td>Supply Medical.....</td>
                     <td>112450 SAR</td>
-                    <td><a href="#" class="btn btn-info btn-sm">Delivered</a></td>
+                    <td><a href="#" class="btn btn-info btn-sm">Update Delivery</a></td>
                   </tr>
                 </tbody>
               </table>
@@ -86,29 +86,22 @@
 
 
       <!-- The Modal -->
-      <div class="modal fade" id="update_deliver">
+      <!-- <div class="modal fade" id="update_deliver">
         <div class="modal-dialog modal-dialog-centered">
           <div class="modal-content">
-          
-            <!-- Modal Header -->
             <div class="modal-header py-0" style="border-bottom: none;">
               <button type="button" class="close" data-dismiss="modal" style="outline: none;">&times;</button>
             </div>
-            
-            <!-- Modal body -->
             <div class="modal-body text-center">
               <h5 class="">Updating status of the <b>ASN ID : 123456789</b><br> as <b>DELIVERED</b></h5>
             </div>
-            
-            <!-- Modal footer -->
             <div class="modal-footer justify-content-center py-2 mt-3 mb-3" style="border-top: none;">
               <a href="#" class="btn btn-success px-5" data-dismiss="modal">Ok</a>
               <a href="#" class="btn btn-danger px-5" data-dismiss="modal">Cancel</a>
             </div>
-            
           </div>
         </div>
-      </div>
+      </div> -->
 
   </body>
 </html>

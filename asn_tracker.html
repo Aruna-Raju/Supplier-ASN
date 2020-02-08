@@ -40,10 +40,10 @@
         <div class="container-fluid pt-5 mt-5 main_div">
           <div class="row justify-content-center">
             <h3 class="mb-4">
-              <b>List of all Open POs</b>
+              <b>List of Requested POs</b>
             </h3>
 
-            <div class="col-12 text-center">
+            <div class="col-12 table_height text-center">
               <table class="table table-bordered mx-auto">
                 <thead class="bg-info text-white">
                   <tr>
@@ -55,26 +55,26 @@
                   </tr>
                 </thead>
                 <tbody>
-                  <tr>
+                  <tr onclick="window.location.href='pdt_details_asntracker.html'">
                     <td>123456789</td>
                     <td>45000789</td>
                     <td>Supply Medical.....</td>
                     <td>112450 SAR</td>
-                    <td><b>Accepted</b></td>
+                    <td><b>New Request</b></td>
                   </tr>
-                  <tr>
+                  <tr onclick="window.location.href='pdt_details_asntracker_rejected.html'">
                     <td>123456790</td>
                     <td>45000789</td>
                     <td>Supply Medical.....</td>
                     <td>112450 SAR</td>
-                    <td><b>Rejected</b></td>
+                    <td class="text-danger"><b>Rejected</b></td>
                   </tr>
-                  <tr>
+                  <tr onclick="window.location.href='pdt_details_asntracker.html'">
                     <td>123456791</td>
                     <td>45000789</td>
                     <td>Supply Medical.....</td>
                     <td>112450 SAR</td>
-                    <td><b>Accepted</b></td>
+                    <td class="text-success"><b>Accepted</b></td>
                   </tr>
                 </tbody>
               </table>
