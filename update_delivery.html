@@ -19,7 +19,10 @@
   <body>
       <header>
         <nav class="navbar navbar-expand-sm justify-content-center py-0 shadow fixed-top">
-          <a class="navbar-brand pl-5 py-1" href="#" style="width: 30%;">
+          <a class="navbar-brand py-1 mr-0" href="po_list.html">
+            <i class="fas fa-angle-left pl-2" style="font-size: 30px;"></i>
+          </a>
+          <a class="navbar-brand pl-3 py-1" href="#" style="width: 30%;">
             <img src="assets/images/logo.png" height="50px">
           </a>
           <ul class="navbar-nav justify-content-center" style="width: 40%;">
@@ -44,47 +47,68 @@
               <table class="table table-bordered mx-auto">
                 <thead class="bg-info text-white">
                   <tr>
+                    <th>ASN ID</th>
                     <th>PO #</th>
                     <th>PO Description</th>
                     <th>Total Value</th>
-                    <th>Request ASN</th>
-                    <th>Update Deliery</th>
-                    <th>ASN Tracker</th>
+                    <th>Delivery Status</th>
                   </tr>
                 </thead>
                 <tbody>
                   <tr>
+                    <td>123456789</td>
                     <td>45000789</td>
                     <td>Supply Medical.....</td>
                     <td>112450 SAR</td>
-                    <td><a href="product_items.html">Request ASN?</a></td>
-                    <td><a href="update_delivery.html">Update Delivery?</a></td>
-                    <td><a href="asn_tracker.html">Status of ASN?</a></td>
+                    <td><a href="#" class="btn btn-info btn-sm" data-toggle="modal" data-target="#update_deliver">Delivered</a></td>
                   </tr>
                   <tr>
-                    <td>45000790</td>
+                    <td>123456790</td>
+                    <td>45000789</td>
                     <td>Supply Medical.....</td>
                     <td>112450 SAR</td>
-                    <td><a href="product_items.html">Request ASN?</a></td>
-                    <td><a href="update_delivery.html">Update Delivery?</a></td>
-                    <td><a href="asn_tracker.html">Status of ASN?</a></td>
+                    <td>Items Delivered</td>
                   </tr>
                   <tr>
-                    <td>45000791</td>
+                    <td>123456791</td>
+                    <td>45000789</td>
                     <td>Supply Medical.....</td>
                     <td>112450 SAR</td>
-                    <td><a href="product_items.html">Request ASN?</a></td>
-                    <td><a href="update_delivery.html">Update Delivery?</a></td>
-                    <td><a href="asn_tracker.html">Status of ASN?</a></td>
+                    <td><a href="#" class="btn btn-info btn-sm">Delivered</a></td>
                   </tr>
                 </tbody>
               </table>
             </div>
 
-
           </div>
         </div>
       </main>
+
+
+      <!-- The Modal -->
+      <div class="modal fade" id="update_deliver">
+        <div class="modal-dialog modal-dialog-centered">
+          <div class="modal-content">
+          
+            <!-- Modal Header -->
+            <div class="modal-header py-0" style="border-bottom: none;">
+              <button type="button" class="close" data-dismiss="modal" style="outline: none;">&times;</button>
+            </div>
+            
+            <!-- Modal body -->
+            <div class="modal-body text-center">
+              <h5 class="">Updating status of the <b>ASN ID : 123456789</b><br> as <b>DELIVERED</b></h5>
+            </div>
+            
+            <!-- Modal footer -->
+            <div class="modal-footer justify-content-center py-2 mt-3 mb-3" style="border-top: none;">
+              <a href="#" class="btn btn-success px-5" data-dismiss="modal">Ok</a>
+              <a href="#" class="btn btn-danger px-5" data-dismiss="modal">Cancel</a>
+            </div>
+            
+          </div>
+        </div>
+      </div>
 
   </body>
 </html>
