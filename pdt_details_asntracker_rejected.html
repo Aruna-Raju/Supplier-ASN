@@ -18,7 +18,7 @@
   </head>
   <body>
       <header>
-        <nav class="navbar navbar-expand-sm justify-content-center py-0 shadow fixed-top">
+        <nav class="navbar navbar-expand-sm justify-content-center py-0 shadow fixed-top bg-white">
           <a class="navbar-brand py-1 mr-0" href="asn_tracker.html">
             <i class="fas fa-angle-left pl-2" style="font-size: 30px;"></i>
           </a>
@@ -124,10 +124,19 @@
               </div>
 
               <div class="col-7 py-3 mb-4 border border-danger">
-                <h5 class="text-danger">Rejected Reason :</h5>
-                <p>Comments ........</p>
+                <h5 class="text-danger">Reason For Rejection :</h5>
 
                 <table class="table table-borderless mb-0">
+                  <tr>
+                    <td class="py-1 px-1" width="20%"><b>Reason</b></td>
+                    <td class="py-1 px-0" width="1%">:</td>
+                    <td class="py-1 px-1">Comments ........</td>
+                  </tr>
+                  <tr class="text-center">
+                    <td colspan="3">
+                      <p class="mb-0"><b>New Suggested Date and Time</b></p>
+                    </td>
+                  </tr>
                   <tr>
                     <td class="py-1 px-1" width="20%"><b>New Date</b></td>
                     <td class="py-1 px-0" width="1%">:</td>
@@ -138,16 +147,15 @@
                     <td class="py-1 px-0">:</td>
                     <td class="py-1 px-1">12:00 PM</td>
                   </tr>
-                  <tr>
+                  <!-- <tr>
                     <td class="py-1 px-1"><b>Ship To</b></td>
                     <td class="py-1 px-0">:</td>
                     <td class="py-1 px-1">Bangalore</td>
-                  </tr>
+                  </tr> -->
                 </table>
 
                 <div class="form-group text-center mt-2 mb-0">
                   <button type="button" class="btn btn-info px-4 mx-2">Request Again</button>
-                  <button type="button" class="btn btn-info px-4 mx-2">New Request</button>
                 </div>
               </div>
               
